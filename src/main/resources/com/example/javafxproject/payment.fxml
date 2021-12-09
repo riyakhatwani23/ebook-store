@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.Payment">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="AQUA" height="606.0" layoutX="-1.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="258.0" />
+      <Label layoutX="43.0" layoutY="101.0" prefWidth="160.0" text="Payment Gateway" wrapText="true">
+         <font>
+            <Font name="Bangla MN" size="32.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="card" layoutX="440.0" layoutY="78.0" prefHeight="52.0" prefWidth="159.0" promptText="Select type of Card" />
+      <Label layoutX="349.0" layoutY="268.0" text="Expiry">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="212.0" text="Card Number">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="334.0" text="CVV">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cno" layoutX="533.0" layoutY="210.0" promptText="16 digit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cvv" layoutX="533.0" layoutY="330.0" promptText="***">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="expiry" layoutX="535.0" layoutY="270.0" promptText="08/21">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="389.0" layoutY="478.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="606.0" layoutY="481.0" mnemonicParsing="false" onAction="#pay" prefHeight="28.0" prefWidth="74.0" text="Pay">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="amount" disable="true" layoutX="443.0" layoutY="401.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

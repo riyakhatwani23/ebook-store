@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.signup">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="510.0" prefWidth="153.0" style="-fx-background-color: cyan;" />
+      <Label layoutX="244.0" layoutY="63.0" text="New user signup" textFill="#22bfef">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="130.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="232.0" prefHeight="18.0" prefWidth="77.0" text="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="273.0" text="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="326.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="179.0" prefHeight="27.0" prefWidth="105.0" text="Phone No.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="343.0" layoutY="131.0" promptText="Enter your Name" />
+      <TextField fx:id="txtpno" layoutX="344.0" layoutY="180.0" promptText="Enter your phone no" />
+      <TextField fx:id="txtemail" layoutX="345.0" layoutY="232.0" promptText="Enter your email address" />
+      <TextField fx:id="txtusername" layoutX="346.0" layoutY="274.0" promptText="Create new username" />
+      <PasswordField fx:id="txtpassword" layoutX="347.0" layoutY="327.0" promptText="Enter password" />
+      <Button layoutX="528.0" layoutY="435.0" mnemonicParsing="false" onAction="#btnsignupok" style="-fx-background-color: cyan;" text="signup" textFill="#2b2d2e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="204.0" layoutY="372.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtaddress" layoutX="345.0" layoutY="371.0" promptText="Enter Address" />
+      <Button layoutX="157.0" layoutY="38.0" mnemonicParsing="false" onAction="#back" text="back" />
+   </children>
+</AnchorPane>
